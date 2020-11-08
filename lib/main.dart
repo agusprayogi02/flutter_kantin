@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kantin/screen/user_list.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,12 +21,8 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
-        // This makes the visual density adapt to the platform that you run
-        // the app on. For desktop platforms, the controls will be smaller and
-        // closer together (more dense) than on mobile platforms.
-        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Home(),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }

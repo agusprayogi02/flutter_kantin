@@ -1,4 +1,4 @@
-# flutter_kantin
+# kantin
 
 A new Flutter project.
 
