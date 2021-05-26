@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:school_app/routes/app_pages.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -10,7 +11,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 2), () => Get.toNamed('login'));
+    Future.delayed(Duration(seconds: 2), () => Get.offNamed(Routes.LOGIN));
   }
 
   @override
@@ -23,10 +24,12 @@ class _SplashPageState extends State<SplashPage> {
           child: Container(
             height: 200,
             width: 200,
-/*decoration: BoxDecoration(
-image: DecorationImage(
-image: AssetImage('images/img_splash.png'),
-fit: BoxFit.fill)),*/
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/img/logo.png'),
+                fit: BoxFit.fill,
+              ),
+            ),
           ),
         ),
         Text(
